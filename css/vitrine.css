@@ -1,14 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E4D1A5 !important; 
+    background-color: #e9dfc8 !important; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo-vitrine {
+    width: 80px;
+    height: 60px;
 }
 
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #d6621f; 
+    background-color: #f18242; 
 }
 
 .navbar-brand {
@@ -17,20 +25,40 @@ body {
     color: white;  
 }
 
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .navbar-nav .nav-link {
     font-size: 1.2rem;
     color: white; 
 }
 
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.navbar-brand, .nav-link, .ms-2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.collapse.navbar-collapse {
+    justify-content: center;
 }
 
 .produtos-section {
-    padding-top: 100px;
-    margin-top: 300px; 
+    margin-top: 100px;
+    flex: 1;
 }
 
 .product-card {
@@ -72,3 +100,26 @@ body {
     box-shadow: 0 0 5px rgba(108, 117, 125, 0.5); 
 }
 
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
