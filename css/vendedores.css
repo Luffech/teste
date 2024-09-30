@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e9dfc8; /* Fundo da página para cor de palha */
+    background-color: #e9dfc8 !important; /* Fundo da página para cor de palha */
     font-family: Arial, sans-serif;
 }
 
