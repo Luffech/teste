@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9dfc8; /* Fundo da página para cor de palha */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.credit {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-gap: 30px; /* Espaço entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Imagem redonda */
+    object-fit: cover;
+    border: 5px solid #e91e63; /* Moldura rosa */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.team-member h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e91e63;
+    text-transform: lowercase;
+}
+
+.team-member p {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: rgba(233, 223, 200, 0.8); /* Cor laranja semitransparente */
+    color: #333; /* Cor do texto */
+    padding: 0.2rem 0.5rem; /* Dimensões dos botões ajustadas para ficarem menores */
+    font-size: 0.85rem; /* 15% menor que o padrão */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remover sublinhado */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+    display: inline-block; /* Para que o botão ajuste ao tamanho do texto */
+    margin: 0 5px; /* Espaçamento entre os botões */
+}
+
+.btn-custom:hover {
+    background-color: rgba(168, 110, 39, 0.8); /* Tom um pouco mais escuro que #e9dfc8 ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
+
